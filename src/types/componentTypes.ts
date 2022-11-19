@@ -8,3 +8,12 @@ export interface IRadio {
   label: string;
   checked: boolean;
 }
+
+export interface IButton {
+  text: string;
+  theme: 'blue' | 'purple' | 'navy' | 'red';
+  onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  className?: string;
+  disabled?: boolean;
+}

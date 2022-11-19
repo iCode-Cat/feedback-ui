@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import { GlobalStyle } from './style/GlobalStyle';
 
+import Register from './pages/Register';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
