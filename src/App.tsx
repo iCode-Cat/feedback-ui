@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import PrivateRoutes from './components/PrivateRoutes';
 import { useGetMeQuery } from './redux/api/apiSlice';
+import HeaderMobile from './components/HeaderMobile';
 
 const Wrapper = styled.div``;
 
@@ -18,9 +19,11 @@ function App() {
 
   return (
     <BrowserRouter>
+      <HeaderMobile />
       <Routes>
         {/* Not Protected */}
         <Route path="/register" element={<Register />} />
+
         {/* Protected */}
         <Route element={<PrivateRoutes authSuccess={authSuccess} />}>
           <Route path="/" element={<Home />} />
