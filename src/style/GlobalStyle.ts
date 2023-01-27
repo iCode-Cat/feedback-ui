@@ -15,12 +15,14 @@ export const GlobalStyle = createGlobalStyle`
         --gray: rgba(247, 248, 253, 1);
         --orange: rgba(244, 159, 133, 1);
         --lightBlue: rgba(98, 188, 250, 1);       
+        --bg:#F2F2F2;
     }
 
     * {
         margin:0;
         padding:0;
         box-sizing:border-box;
+        font-family: 'Roboto', sans-serif;
     }
     html {
         font-size:62.5%;
