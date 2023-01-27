@@ -33,4 +33,7 @@ export const GlobalStyle = createGlobalStyle`
         background:  #FFF;
    
     }
+    .b-radius {
+        border-radius:10px;
+    }
 `;
