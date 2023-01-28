@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import SuggestionsEmpty from '../components/SuggestionsEmpty';
+import SuggestionsExists from '../components/SuggestionsExists';
 
 const Div = styled.div`
   display: grid;
   background: var(--bg);
   min-height: 90vh;
-  padding: 3.2rem 2.4rem 4.7rem 2.4rem;
+  padding: 3.2rem 2.4rem 0rem 2.4rem;
 `;
 
 const Suggestions = () => {
   return (
     <Div>
-      <SuggestionsEmpty />
+      {/* <SuggestionsEmpty /> */}
+      <SuggestionsExists />
     </Div>
   );
 };

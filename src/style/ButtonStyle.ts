@@ -9,6 +9,6 @@ export const Button = styled.button`
   font-weight: 500;
   line-height: 25.78px;
   letter-spacing: 5%;
-  padding: 1.1rem 5.5rem;
+  padding: ${({ padding }: any) => padding};
   cursor: pointer;
 `;

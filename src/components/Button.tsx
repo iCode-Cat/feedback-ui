@@ -1,12 +1,18 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { blue, purple, navy, red } from '../theme/Button.styled.theme';
+import {
+  blue,
+  purple,
+  navy,
+  red,
+  labelBlue,
+} from '../theme/Button.styled.theme';
 import { IButton } from '../types/componentTypes';
 
-const ButtonStyle = styled.button`
+const ButtonStyle: any = styled.button`
   border: 0;
   cursor: pointer;
-  padding: ${(props) => props.theme.padding};
+  padding: ${(props: any) => props.padding};
   font-size: ${(props) => props.theme.fontSize};
   font-weight: ${(props) => props.theme.fontWeight};
   line-height: ${(props) => props.theme.lineHeight};
@@ -30,6 +36,7 @@ const Button = ({
   type,
   className,
   disabled,
+  padding,
 }: IButton) => {
   const themes: any = [
     {
@@ -48,6 +55,10 @@ const Button = ({
       name: 'red',
       theme: red,
     },
+    {
+      name: 'labelBlue',
+      theme: labelBlue,
+    },
   ];
 
   return (
@@ -57,6 +68,7 @@ const Button = ({
         className={className || ''}
         type={type || 'button'}
         onClick={onClick}
+        padding={padding}
       >
         {text}
       </ButtonStyle>

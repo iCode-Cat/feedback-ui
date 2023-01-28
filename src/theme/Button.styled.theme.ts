@@ -61,3 +61,18 @@ export const red = {
     color: '#F2F4FE',
   },
 };
+
+export const labelBlue = {
+  fontSize: '1.3rem',
+  fontWeight: 600,
+  lineHeight: '18.79px',
+  borderRadius: '10px',
+  default: {
+    background: '#F2F4FF',
+    color: '#4661E6',
+  },
+  hover: {
+    background: '#F2F4FF',
+    color: '#4661E6',
+  },
+};
